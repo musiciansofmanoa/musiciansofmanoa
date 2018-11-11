@@ -9,5 +9,16 @@
     { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
     { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+  ],
+
+  "userProfiles" : [
+    { "email": "john@yahoo.com", "name": "John Finkle", "taste": "Rock, Pop, R&B", "rating": 8, "sessionsAttended": 3, "skill": "new", "instruments": "trumpet", "playedWith": "Melissa DeTora", "goals": "Go Professional"},
+    { "email": "melissa@yahoo.com", "name": "Melissa DeTora", "taste": "K-Pop, Country", "rating": 8, "sessionsAttended": 1, "skill": "experienced", "instruments": "trumpet", "playedWith": "John Finkle", "goals": "Just Jam"},
+    { "email": "brian@yahoo.com", "name": "Brain Kibler", "taste": "Rap, EDM", "rating": 8, "sessionsAttended": 1, "skill": "professional", "instruments": "trumpet", "playedWith": "none", "goals": "Just Jam"}
+  ],
+
+  "jamSessions" : [
+    { "timeStart": "4:15 pm", "timeEnd": "7:15 pm", "purpose": "Practice", "location": "Campus Center Courtyard", "date": "July 4, 2019"},
+    { "timeStart": "4:15 pm", "timeEnd": "7:15 pm", "purpose": "Just Jam", "location": "POST 318B", "date": "December 7, 2018"}
   ]
 }

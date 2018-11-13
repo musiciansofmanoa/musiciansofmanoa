@@ -1,4 +1,5 @@
 import React from 'react';
+import { Grid, List } from 'semantic-ui-react';
 
 /** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
 class Footer extends React.Component {
@@ -6,11 +7,34 @@ class Footer extends React.Component {
     const divStyle = { paddingTop: '15px' };
     return (
         <footer>
-          <div style={divStyle} className="ui center aligned container">
-            <hr />
-              Department of Information and Computer Sciences <br />
-              University of Hawaii<br />
-              Honolulu, HI 96822
+          <div style={divStyle}>
+            <hr/>
+            <Grid container columns={3}>
+              <Grid.Column>Main Menu
+                <hr/>
+                <List>
+                  <List.Item>Users</List.Item>
+                  <List.Item>Musical Tastes</List.Item>
+                  <List.Item>Musical Capabilities</List.Item>
+                  <List.Item>Musical Goals</List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column>Location
+                <hr/>
+                <List>
+                  <List.Item>Department of Information and Computer Sciences</List.Item>
+                  <List.Item>University of Hawaii</List.Item>
+                  <List.Item>Honolulu, HI 96822</List.Item>
+                </List>
+              </Grid.Column>
+              <Grid.Column>Contact
+                <hr/>
+                <List>
+                  <List.Item>808-531-1888</List.Item>
+                  <List.Item>cmoore@hawaii.edu</List.Item>
+                </List>
+              </Grid.Column>
+            </Grid>
           </div>
         </footer>
     );

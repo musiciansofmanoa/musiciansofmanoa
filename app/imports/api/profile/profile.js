@@ -13,7 +13,8 @@ const ProfileSchema = new SimpleSchema({
   rating: Number,
   sessionsAttended: Number,
   skill: String,
-  instruments: String,
+  instruments: Array,
+  "instruments.$": String,
   playedWith: String,
   goals: String,
 }, { tracker: Tracker });

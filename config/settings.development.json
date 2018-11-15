@@ -13,9 +13,9 @@
   ],
 
   "userProfiles" : [
-    { "email": "john@yahoo.com", "name": "John Finkle", "taste": "Rock, Pop, R&B", "rating": 8, "sessionsAttended": 3, "skill": "new", "instruments": "trumpet", "playedWith": "Melissa DeTora", "goals": "Go Professional"},
-    { "email": "melissa@yahoo.com", "name": "Melissa DeTora", "taste": "K-Pop, Country", "rating": 8, "sessionsAttended": 1, "skill": "experienced", "instruments": "trumpet", "playedWith": "John Finkle", "goals": "Just Jam"},
-    { "email": "brian@gmail.com", "name": "Brain Kibler", "taste": "Rap, EDM", "rating": 8, "sessionsAttended": 1, "skill": "professional", "instruments": "trumpet", "playedWith": "none", "goals": "Just Jam"}
+    { "email": "john@yahoo.com", "name": "John Finkle", "taste": "Rock, Pop, R&B", "rating": 8, "sessionsAttended": 3, "skill": "new", "instruments": ["trumpet"], "playedWith": "Melissa DeTora", "goals": "Go Professional"},
+    { "email": "melissa@yahoo.com", "name": "Melissa DeTora", "taste": "K-Pop, Country", "rating": 8, "sessionsAttended": 1, "skill": "experienced", "instruments": ["trumpet", "guitar"], "playedWith": "John Finkle", "goals": "Just Jam"},
+    { "email": "brian@gmail.com", "name": "Brain Kibler", "taste": "Rap, EDM", "rating": 8, "sessionsAttended": 1, "skill": "professional", "instruments": ["trumpet"], "playedWith": "none", "goals": "Just Jam"}
   ],
 
   "jamSessions" : [

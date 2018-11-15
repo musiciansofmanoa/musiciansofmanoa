@@ -8,8 +8,6 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import MusicLanding from '../pages/MusicLanding';
 import Profile from '../pages/Profile';
-import ListStuffAdmin from '../pages/ListStuffAdmin';
-import ListStuff from '../pages/ListStuff';
 import ListProfileAdmin from '../pages/ListProfileAdmin';
 import AddStuff from '../pages/AddStuff';
 import EditStuff from '../pages/EditStuff';

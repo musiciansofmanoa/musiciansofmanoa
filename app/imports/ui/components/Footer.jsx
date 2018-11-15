@@ -4,10 +4,10 @@ import { Grid, List } from 'semantic-ui-react';
 /** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
 class Footer extends React.Component {
   render() {
-    const divStyle = { paddingTop: '15px', color: '#024731' };
+    const menuStyle = { backgroundColor: '#024731', fontfamily: 'Khula', color: '#FFFFFF' };
     return (
         <footer>
-          <div style={divStyle}>
+          <div style={menuStyle}>
             <hr/>
             <Grid container columns={3}>
               <Grid.Column>Main Menu

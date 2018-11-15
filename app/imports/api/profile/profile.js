@@ -10,15 +10,15 @@ const ProfileSchema = new SimpleSchema({
   email: String,
   name: String,
   taste: Array,
-  "taste.$": String,
+  'taste.$': String,
   rating: Number,
   sessionsAttended: Number,
   skill: String,
   instruments: Array,
-  "instruments.$": String,
+  'instruments.$': String,
   playedWith: String,
   goals: String,
-  imageUrl: { type: String, optional: true }
+  imageUrl: { type: String, optional: true },
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */

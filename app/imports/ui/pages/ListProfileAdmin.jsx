@@ -34,7 +34,7 @@ class ListProfileAdmin extends React.Component {
               </Table.Row>
             </Table.Header>
             <Table.Body>
-              {this.props.profiles.map((profile) => <ProfileItemAdmin key={profile._id} profile={profile} />)}
+              {this.props.profiles.map((profile, index) => <ProfileItemAdmin key={index} profile={profile} />)}
             </Table.Body>
           </Table>
         </Container>

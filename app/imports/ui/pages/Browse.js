@@ -40,6 +40,7 @@ class Browse extends React.Component {
       {key: 'trumpet', value: 'trumpet', text: "Trumpet"},
       {key: 'piano', value: 'piano', text: "Piano"},
       {key: 'recorder', value: 'recorder', text: "Recorder"},
+      {key: 'clarinet', value: 'clarinet', text: "Clarinet"},
     ];
 
     const tasteOptions = [
@@ -49,6 +50,7 @@ class Browse extends React.Component {
       {key: 'r&b', value: 'r&b', text: "R&B"},
       {key: 'k-pop', value: 'k-pop', text: "KPop"},
       {key: 'j-pop', value: 'j-pop', text: "JPop"},
+      {key: 'classical', value: 'classical', text: "Classical"},
     ];
 
     return (
@@ -63,7 +65,7 @@ class Browse extends React.Component {
           <Card.Group centered>
             {this.filterProfiles(this.props.profiles).map((profile, index) =>
               <Card>
-                <Image size='medium' src={"https://randomuser.me/api/portraits/men/" + (index+27) + ".jpg"} />
+                <Image size='medium' src={profile.imageUrl || "https://randomuser.me/api/portraits/men/" + (index+27) + ".jpg"} />
                 <Card.Content>
                   <Card.Header>{this.formatInstruments(profile.instruments)}</Card.Header>
                   <Card.Meta>

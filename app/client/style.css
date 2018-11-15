@@ -45,7 +45,6 @@ h1{
 .cent-text-one{
   position: absolute;
   left: 0;
-  top: 50%;
   width: 100%;
   text-align: center;
   color: #000;
@@ -69,7 +68,7 @@ h1{
   color: #fff;
   padding-top: 18px;
   padding-right: 18px;
-  padding-bottom: 28px;
+  padding-bottom: 18px;
   padding-left: 18px;
   font-size: 25px;
 }
@@ -78,7 +77,7 @@ h1{
   color: #fff;
   padding-top: 38px;
   padding-right: 18px;
-  padding-bottom: 28px;
+  padding-bottom: 18px;
   padding-left: 18px;
   font-size: 25px;
 }
@@ -87,7 +86,7 @@ h1{
   color: #fff;
   padding-top: 18px;
   padding-right: 18px;
-  padding-bottom: 28px;
+  padding-bottom: 18px;
   padding-left: 18px;
   font-size: 25px;
 }

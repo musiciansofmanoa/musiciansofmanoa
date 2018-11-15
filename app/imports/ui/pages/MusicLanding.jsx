@@ -1,5 +1,5 @@
 import React from 'react';
-import {Header, Column, Grid} from 'semantic-ui-react';
+import {Icon, Header, Column, Grid, Image} from 'semantic-ui-react';
 
 /** A simple static component to render some text for the landing page. */
 class MusicLanding extends React.Component {
@@ -12,9 +12,10 @@ class MusicLanding extends React.Component {
               <Grid container stackable centered columns={3}>
 
                 <Grid.Column textAlign='center'>
-                  <Header as='h1' inverted>Meet Fellow Musicians</Header>
-
-                  <Header as='h3' inverted>Create your own profile and meet other musicians.</Header>
+                  <Header as='h1' icon>
+                    <Icon inverted color='grey' name='address card outline' circular/>
+                  </Header>
+                  <Header as='h2' inverted>Create a Profile</Header>
 
                 </Grid.Column>
               </Grid>
@@ -31,8 +32,10 @@ class MusicLanding extends React.Component {
                   <Grid.Column textAlign='center'>
                     <br></br>
                     <br></br>
-                    <Header as='h1' inverted>Plan Jam Sessions</Header>
-                    <Header as='h3' inverted>Plan jam sessions and find quick fill-ins for gigs.</Header>
+                    <Header as='h1' icon>
+                      <Icon inverted color='grey' name='users' circular/>
+                    </Header>
+                    <Header as='h2' inverted>Connect with Other Musicians</Header>
 
                   </Grid.Column>
                 </Grid>
@@ -49,8 +52,11 @@ class MusicLanding extends React.Component {
                   <Grid.Column textAlign='center'>
                     <br></br>
                     <br></br>
-                    <Header as='h1' inverted>Leave Reviews</Header>
-                    <Header as='h3' inverted>Submit reviews on other profiles.</Header>
+
+                    <Header as='h1' icon>
+                      <Icon size='huge' inverted color='grey' name='pen square' circular/>
+                    </Header>
+                    <Header as='h2' inverted>Leave a Review</Header>
 
                   </Grid.Column>
                 </Grid>

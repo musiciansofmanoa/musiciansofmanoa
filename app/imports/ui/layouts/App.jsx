@@ -9,6 +9,8 @@ import Footer from '../components/Footer';
 import MusicLanding from '../pages/MusicLanding';
 import Profile from '../pages/Profile';
 import ListStuffAdmin from '../pages/ListStuffAdmin';
+import ListStuff from '../pages/ListStuff';
+import ListProfileAdmin from '../pages/ListProfileAdmin';
 import AddStuff from '../pages/AddStuff';
 import EditStuff from '../pages/EditStuff';
 import Browse from '../pages/Browse';
@@ -32,7 +34,7 @@ class App extends React.Component {
               <ProtectedRoute path="/add" component={AddStuff}/>
               <ProtectedRoute path="/browse" component={Browse}/>
               <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
-              <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
+              <AdminProtectedRoute path="/admin" component={ListProfileAdmin}/>
               <ProtectedRoute path="/signout" component={Signout}/>
               <Route component={NotFound}/>
             </Switch>

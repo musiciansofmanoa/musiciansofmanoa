@@ -1,4 +1,10 @@
-.navbar-menu {
-  marginBottom: '10px';
-  background-color: darkgreen;
+.app-background {
+  background: url(https://cdn.pixabay.com/photo/2014/04/02/10/22/hibiscus-303637_1280.png) no-repeat center center fixed;
+  background-size: cover;
+  height: 500px;
+  color: white;
+}
+
+h1{
+  color: #024731;
 }

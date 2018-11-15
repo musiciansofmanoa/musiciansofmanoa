@@ -27,7 +27,7 @@ class Profile extends React.Component {
         <Container>
           <Header as="h2" textAlign="center">Profile</Header>
           <Card.Group>
-            {this.profiles.map((profile, index) => <ProfileComponent key={index} profile={profile} />)}
+            {this.profiles.map((profile, index) => <ProfileComponent key={profile + index} profile={profile} />)}
           </Card.Group>
         </Container>
     );

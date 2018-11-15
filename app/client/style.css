@@ -8,3 +8,86 @@
 h1{
   color: #024731;
 }
+
+.parallax-one {
+  background-image: url('/images/convo.jpg');
+  height: 100vh;
+  width: 100vw;
+  z-index: 99;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-two {
+  background-image: url('/images/mic.jpg');
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-three {
+  background-image: url('/images/riffs.png');
+  height: 100vh;
+  width: 100vw;
+  z-index: 101;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cent-text-one{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.cent-text-two{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.cent-text-three{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.cent-text-one .border-one {
+  color: #fff;
+  padding-top: 18px;
+  padding-right: 18px;
+  padding-bottom: 28px;
+  padding-left: 18px;
+  font-size: 25px;
+}
+
+.cent-text-two .border-two {
+  color: #fff;
+  padding-top: 38px;
+  padding-right: 18px;
+  padding-bottom: 28px;
+  padding-left: 18px;
+  font-size: 25px;
+}
+
+.cent-text-three .border-three {
+  color: #fff;
+  padding-top: 18px;
+  padding-right: 18px;
+  padding-bottom: 28px;
+  padding-left: 18px;
+  font-size: 25px;
+}

@@ -9,11 +9,11 @@ class ProfileItemAdmin extends React.Component {
         <Table.Row>
           <Table.Cell>{this.props.profile.email}</Table.Cell>
           <Table.Cell>{this.props.profile.name}</Table.Cell>
-          <Table.Cell>{this.props.profile.taste}</Table.Cell>
+          <Table.Cell>{this.props.profile.taste.join(', ')}</Table.Cell>
           <Table.Cell>{this.props.profile.rating}</Table.Cell>
           <Table.Cell>{this.props.profile.sessionsAttended}</Table.Cell>
           <Table.Cell>{this.props.profile.skill}</Table.Cell>
-          <Table.Cell>{this.props.profile.instruments}</Table.Cell>
+          <Table.Cell>{this.props.profile.instruments.join(', ')}</Table.Cell>
           <Table.Cell>{this.props.profile.playedWith}</Table.Cell>
           <Table.Cell>{this.props.profile.goals}</Table.Cell>
         </Table.Row>

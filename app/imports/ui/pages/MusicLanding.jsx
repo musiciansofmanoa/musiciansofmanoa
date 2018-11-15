@@ -5,6 +5,7 @@ import { Grid, Image } from 'semantic-ui-react';
 class MusicLanding extends React.Component {
   render() {
     return (
+        <div className="app-background">
         <Grid verticalAlign='middle' textAlign='center' container>
 
           <Grid.Column width={4}>
@@ -16,6 +17,7 @@ class MusicLanding extends React.Component {
           </Grid.Column>
 
         </Grid>
+        </div>
     );
   }
 }

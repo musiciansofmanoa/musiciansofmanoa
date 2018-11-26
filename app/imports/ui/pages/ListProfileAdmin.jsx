@@ -31,6 +31,8 @@ class ListProfileAdmin extends React.Component {
                 <Table.HeaderCell>Instruments</Table.HeaderCell>
                 <Table.HeaderCell>Played With</Table.HeaderCell>
                 <Table.HeaderCell>Goals</Table.HeaderCell>
+                <Table.HeaderCell>Edit</Table.HeaderCell>
+                <Table.HeaderCell>Delete</Table.HeaderCell>
               </Table.Row>
             </Table.Header>
             <Table.Body>
@@ -52,6 +54,7 @@ ListProfileAdmin.propTypes = {
 export default withTracker(() => {
   // Get access to Stuff documents.
   const subscription = Meteor.subscribe('ProfilesAdmin');
+  console.log(Profiles.find({}).fetch());
   return {
     profiles: Profiles.find({}).fetch(),
     ready: subscription.ready(),

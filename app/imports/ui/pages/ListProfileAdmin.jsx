@@ -31,7 +31,6 @@ class ListProfileAdmin extends React.Component {
                 <Table.HeaderCell>Instruments</Table.HeaderCell>
                 <Table.HeaderCell>Played With</Table.HeaderCell>
                 <Table.HeaderCell>Goals</Table.HeaderCell>
-                <Table.HeaderCell>Edit</Table.HeaderCell>
                 <Table.HeaderCell>Delete</Table.HeaderCell>
               </Table.Row>
             </Table.Header>

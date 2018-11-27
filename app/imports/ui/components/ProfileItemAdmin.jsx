@@ -40,7 +40,6 @@ class ProfileItemAdmin extends React.Component {
           <Table.Cell>{this.props.profile.instruments.join(', ')}</Table.Cell>
           <Table.Cell>{this.props.profile.playedWith}</Table.Cell>
           <Table.Cell>{this.props.profile.goals}</Table.Cell>
-          <Table.Cell><Link to={`/edit/${this.props.profile._id}`}>Edit</Link></Table.Cell>
       <Table.Cell> <Button basic onClick={this.onClick}>Delete</Button></Table.Cell>
         </Table.Row>
     );

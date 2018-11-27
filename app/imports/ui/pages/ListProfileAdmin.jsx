@@ -37,6 +37,25 @@ class ListProfileAdmin extends React.Component {
               {this.props.profiles.map((profile) => <ProfileItemAdmin key={profile._id} profile={profile} />)}
             </Table.Body>
           </Table>
+
+          <Header as="h2" textAlign="center">Requested Events</Header>
+          <Table celled>
+            <Table.Header>
+              <Table.Row>
+                <Table.HeaderCell>Time Start</Table.HeaderCell>
+                <Table.HeaderCell>Time End</Table.HeaderCell>
+                <Table.HeaderCell>Purpose</Table.HeaderCell>
+                <Table.HeaderCell>Location</Table.HeaderCell>
+                <Table.HeaderCell>Date</Table.HeaderCell>
+                <Table.HeaderCell>Who Requested</Table.HeaderCell>
+                <Table.HeaderCell>Approve</Table.HeaderCell>
+                <Table.HeaderCell>Decline</Table.HeaderCell>
+              </Table.Row>
+            </Table.Header>
+            <Table.Body>
+              a
+            </Table.Body>
+          </Table>
         </Container>
     );
   }

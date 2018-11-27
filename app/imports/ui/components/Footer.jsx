@@ -7,9 +7,9 @@ import { Menu, Dropdown } from 'semantic-ui-react';
 
 class Footer extends React.Component {
   render() {
-    const menuStyle = { fontfamily: 'Khula', borderColor: 'black' };
+    const menuStyle = { backgroundColor: '#024731', fontfamily: 'Khula' };
     return (
-        <Menu style={menuStyle} attached="top" borderless>
+        <Menu style={menuStyle} attached="top" borderless inverted>
           <Menu.Item>
             {this.props.currentUser ? (
                 [<Menu.Item as={NavLink} activeClassName="active" exact to="/" key='main menu'>Main Menu</Menu.Item>]
@@ -23,17 +23,17 @@ class Footer extends React.Component {
           <Menu.Item position="right">
             <Dropdown text="Location" pointing="top right">
               <Dropdown.Menu>
-                <Dropdown.Item text="Department of Information and Computer Sciences"/>
-                <Dropdown.Item text="University of Hawaii"/>
-                <Dropdown.Item text="Honolulu, HI 96822"/>
+                <Dropdown.Item text="Department of Information and Computer Sciences
+                University of Hawaii
+                Honolulu, HI 96822"/>
               </Dropdown.Menu>
             </Dropdown>
           </Menu.Item>
           <Menu.Item position="right">
             <Dropdown text="Contact" pointing="top right">
               <Dropdown.Menu>
-                <Dropdown.Item text="Phone: 808-531-1888"/>
-                <Dropdown.Item text="Email: cmoore@hawaii.edu"/>
+                <Dropdown.Item text="Phone: 808-531-1888
+                Email: cmoore@hawaii.edu"/>
               </Dropdown.Menu>
             </Dropdown>
           </Menu.Item>

@@ -10,7 +10,7 @@ h1{
 }
 
 .parallax-one {
-  background-image: url('/images/convo.jpg');
+  background-image: url('/images/mic.jpg');
   height: 100vh;
   width: 100vw;
   z-index: 99;
@@ -21,7 +21,7 @@ h1{
 }
 
 .parallax-two {
-  background-image: url('/images/mic.jpg');
+  background-image: url('/images/convo.jpg');
   height: 100vh;
   width: 100vw;
   z-index: 100;
@@ -89,4 +89,14 @@ h1{
   padding-bottom: 18px;
   padding-left: 18px;
   font-size: 25px;
+}
+
+.readable {
+  color: white;
+  font-weight: bold;
+}
+
+#naniTF {
+  color:white;
+  font-style: bold;
 }

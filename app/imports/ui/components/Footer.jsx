@@ -7,11 +7,10 @@ import { Menu, Dropdown } from 'semantic-ui-react';
 
 class Footer extends React.Component {
   render() {
-<<<<<<< HEAD
-    const menuStyle = { backgroundColor: '#024731', fontfamily: 'Khula', color: '#FFFFFF' };
+    const menuStyle1 = { backgroundColor: '#024731', fontfamily: 'Khula', color: '#FFFFFF' };
     return (
         <footer>
-          <div style={menuStyle}>
+          <div style={menuStyle1}>
             <hr/>
             <Grid container columns={3}>
               <Grid.Column>Main Menu
@@ -41,10 +40,10 @@ class Footer extends React.Component {
             </Grid>
           </div>
         </footer>
-=======
-    const menuStyle = { backgroundColor: '#024731', fontfamily: 'Khula' };
+
+    const menuStyle2 = { backgroundColor: '#024731', fontfamily: 'Khula' };
     return (
-        <Menu style={menuStyle} attached="top" borderless inverted>
+        <Menu style={menuStyle2} attached="top" borderless inverted>
           <Menu.Item>
             {this.props.currentUser ? (
                 [<Menu.Item as={NavLink} activeClassName="active" exact to="/" key='main menu'>Main Menu</Menu.Item>]
@@ -73,7 +72,6 @@ class Footer extends React.Component {
             </Dropdown>
           </Menu.Item>
         </Menu>
->>>>>>> master
     );
   }
 }

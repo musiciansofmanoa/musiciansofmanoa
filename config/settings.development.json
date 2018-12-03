@@ -21,7 +21,7 @@
   ],
 
   "jamSessions" : [
-    { "timeStart": "4:15 pm", "timeEnd": "7:15 pm", "purpose": "Practice", "location": "Campus Center Courtyard", "date": "July 4, 2019"},
-    { "timeStart": "4:15 pm", "timeEnd": "7:15 pm", "purpose": "Just Jam", "location": "POST 318B", "date": "December 7, 2018", "name": "John Finkle", "email": "john@yahoo.com" }
+    { "eventName": "Pre-Show for 4th of July Bash","timeStart": "4:15 pm", "timeEnd": "7:15 pm", "purpose": "Practice", "location": "Campus Center Courtyard", "date": "July 1, 2019", "user": "Melissa DeTora", "email": "melissa@yahoo.com"},
+    { "timeStart": "4:15 pm", "timeEnd": "7:15 pm", "purpose": "Just Jam", "location": "POST 318B", "date": "December 7, 2018", "user": "John Finkle", "email": "john@yahoo.com" }
   ]
 }

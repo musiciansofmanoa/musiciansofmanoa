@@ -37,7 +37,7 @@ class EventsAdmin extends React.Component {
           <Table.Cell>{this.props.session.location}</Table.Cell>
           <Table.Cell>{this.props.session.date}</Table.Cell>
           <Table.Cell>{this.props.session.user}</Table.Cell>
-      <Table.Cell> <Button basic onClick={this.onClick}>Delete</Button></Table.Cell>
+      <Table.Cell> <Button basic onClick={this.onClick}>Decline</Button></Table.Cell>
         </Table.Row>
     );
   }

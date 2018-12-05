@@ -8,6 +8,7 @@ const Sessions = new Mongo.Collection('Sessions');
 /** Create a schema to constrain the structure of documents associated with this collection. */
 const SessionSchema = new SimpleSchema({
   eventName: String,
+  location: String,
   user: String,
   email: String,
   date: String,

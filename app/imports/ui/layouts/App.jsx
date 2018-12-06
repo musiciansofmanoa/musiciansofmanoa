@@ -13,6 +13,7 @@ import ListEventsAdmin from '../pages/ListEventsAdmin';
 import AddStuff from '../pages/AddStuff';
 import EditStuff from '../pages/EditStuff';
 import Browse from '../pages/Browse';
+import JamSessions from '../pages/JamSessions';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
@@ -32,6 +33,7 @@ class App extends React.Component {
               <ProtectedRoute path="/list" component={Profile}/>
               <ProtectedRoute path="/add" component={AddStuff}/>
               <ProtectedRoute path="/browse" component={Browse}/>
+              <ProtectedRoute path="/jams" component={JamSessions}/>
               <ProtectedRoute path="/edit/:_id" component={EditStuff}/>
               <AdminProtectedRoute path="/admin" component={ListProfileAdmin}/>
               <AdminProtectedRoute path="/eventsAdmin" component={ListEventsAdmin}/>

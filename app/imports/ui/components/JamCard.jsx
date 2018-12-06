@@ -10,10 +10,10 @@ class JamCard extends React.Component {
     return (
         <Card centered>
           <Card.Content>
-            <Card.Header>{this.props.jams.eventName}</Card.Header>
-            <Card.Meta>{this.props.jams.user} {this.props.jams.email}</Card.Meta>
+            <Card.Header>{this.props.jam.eventName}</Card.Header>
+            <Card.Meta>{this.props.jam.user} {this.props.jam.email}</Card.Meta>
             <Card.Description>
-              {this.props.jams.purpose}
+              {this.props.jam.purpose}
             </Card.Description>
           </Card.Content>
         </Card>
@@ -23,7 +23,7 @@ class JamCard extends React.Component {
 
 /** Require a document to be passed to this component. */
 JamCard.propTypes = {
-  jams: PropTypes.object.isRequired,
+  jam: PropTypes.object.isRequired,
 };
 
 /** Wrap this component in withRouter since we use the <Link> React Router element. */

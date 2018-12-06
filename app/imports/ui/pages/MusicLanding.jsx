@@ -109,6 +109,7 @@ class MusicLanding extends React.Component {
 
                     <Segment id="seg">
                       <Image src="/images/uh.png" id="borders" size='medium' centered />
+                      <br></br>
                       <p>
                         Without your reviews, we cannot improve your experience. By leaving a review, we can immediately fix problems before they bug you for eternity. Constructive criticism is wanted.
                       </p>

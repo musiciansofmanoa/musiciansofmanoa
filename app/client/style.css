@@ -108,16 +108,16 @@ h1{
 
 #seg {
   color: black;
-  background-color: darkgrey;
+  background-color: lightgrey;
   font-size: 15px;
   text-align: center;
   border-style: solid;
   border-width: 2px;
-  border-color: black;
+  border-color: grey;
 }
 
 #borders {
   border-style: solid;
   border-width: 4px;
-  border-color: black;
+  border-color: grey;
 }

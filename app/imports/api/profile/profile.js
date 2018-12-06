@@ -18,7 +18,7 @@ const ProfileSchema = new SimpleSchema({
   'instruments.$': String,
   playedWith: String,
   goals: String,
-  imageUrl: { type: String, optional: true },
+  imageUrl: { type: String, optional: true }
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */

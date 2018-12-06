@@ -15,16 +15,16 @@ class EventsAdmin extends React.Component {
 
   onClick() {
     /* eslint-disable-next-line */
-    if (confirm('Click OK to confirm the delete'))  {
+    if (confirm('Click OK to decline the event'))  {
       Sessions.remove(this.props.session._id, this.deleteCallback);
     }
   }
 
   deleteCallback(error) {
     if (error) {
-      Bert.alert({ type: 'danger', message: `Delete failed: ${error.message}` });
+      Bert.alert({ type: 'danger', message: `Decline failed: ${error.message}` });
     } else {
-      Bert.alert({ type: 'success', message: 'Delete succeeded' });
+      Bert.alert({ type: 'success', message: 'Decline succeeded' });
     }
   }
 

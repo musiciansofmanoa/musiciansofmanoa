@@ -7,7 +7,7 @@ import { Menu, Dropdown } from 'semantic-ui-react';
 
 class Footer extends React.Component {
   render() {
-    const menuStyle = { backgroundColor: '#024731', fontfamily: 'Khula', color: '#FFFFFF' };
+    const menuStyle = { fontfamily: 'Khula', backgroundColor: '#024731' };
     return (
         <Menu style={menuStyle} attached="top" borderless inverted>
           <Menu.Item>
@@ -23,8 +23,8 @@ class Footer extends React.Component {
           <Menu.Item position="right">
             <Dropdown text="Location" pointing="top right">
               <Dropdown.Menu>
-                <Dropdown.Item text="Department of Information and Computer Sciences
-                University of Hawaii
+                <Dropdown.Item text="Department of Information and Computer Sciences,
+                University of Hawaii,
                 Honolulu, HI 96822"/>
               </Dropdown.Menu>
             </Dropdown>
@@ -32,7 +32,7 @@ class Footer extends React.Component {
           <Menu.Item position="right">
             <Dropdown text="Contact" pointing="top right">
               <Dropdown.Menu>
-                <Dropdown.Item text="Phone: 808-531-1888
+                <Dropdown.Item text="Phone: 808-531-1888,
                 Email: cmoore@hawaii.edu"/>
               </Dropdown.Menu>
             </Dropdown>

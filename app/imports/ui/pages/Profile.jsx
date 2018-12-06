@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Header, Loader, Card, Button } from 'semantic-ui-react';
+import { Container, Header, Loader, Card, Button, List } from 'semantic-ui-react';
 import { Stuffs } from '/imports/api/stuff/stuff';
 import ProfileComponent from '/imports/ui/components/ProfileComponent';
 import { withTracker } from 'meteor/react-meteor-data';
@@ -34,6 +34,37 @@ class Profile extends React.Component {
             </Card.Content>
             </Card>
           </Card.Group>
+          <List>
+            <List.Item>
+              <List.Header>Quick Bio</List.Header>
+              <List.Description>Aloha! My name is John Doe and I live in the Manoa Area. I enjoy Classic Rock the most.
+                I've played with many bands and love to hold quick, laid back, jam sessions.  I grew up mostly playing
+                guitar and singing.  I love to experiment with new music and try new instruments all the time.
+                Feel free to reach out.
+              </List.Description>
+              <List.Header>Experience</List.Header>
+              <List.Description>
+                <List bulleted>
+                  <List.Item>Played on Ellen</List.Item>
+                  <List.Item>Opened for Eric Church</List.Item>
+                  <List.Item>Played in 5 succesfull bands</List.Item>
+                  <List.Item>Played multiple charity events during my career</List.Item>
+                </List>
+              </List.Description>
+              <List.Header>Skills</List.Header>
+              <List.Description>
+                <List bulleted>
+                  <List.Item>Spanish Guitar</List.Item>
+                  <List.Item>Acoustic and Electric Guitar</List.Item>
+                  <List.Item>Sing</List.Item>
+                  <List.Item>Piano</List.Item>
+                  <List.Item>Saxaphone</List.Item>
+                  <List.Item>Bass</List.Item>
+                  <List.Item>Bag Pipes</List.Item>
+                </List>
+              </List.Description>
+            </List.Item>
+          </List>
         </Container>
     );
   }

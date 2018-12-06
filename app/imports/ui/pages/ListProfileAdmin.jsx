@@ -52,7 +52,7 @@ ListProfileAdmin.propTypes = {
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
 export default withTracker(() => {
   // Get access to Stuff documents.
-  const subscription = Meteor.subscribe('ProfilesAdmin');
+  const subscription = Meteor.subscribe('ProfileAdmin');
   console.log(Profiles.find({}).fetch());
   return {
     profiles: Profiles.find({}).fetch(),

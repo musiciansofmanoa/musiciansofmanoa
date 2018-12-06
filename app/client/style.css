@@ -71,6 +71,7 @@ h1{
   padding-bottom: 18px;
   padding-left: 18px;
   font-size: 25px;
+  font-weight: bolder;
 }
 
 .cent-text-two .border-two {
@@ -80,6 +81,8 @@ h1{
   padding-bottom: 18px;
   padding-left: 18px;
   font-size: 25px;
+  font-weight: bolder;
+
 }
 
 .cent-text-three .border-three {
@@ -89,6 +92,7 @@ h1{
   padding-bottom: 18px;
   padding-left: 18px;
   font-size: 25px;
+  font-weight: bolder;
 }
 
 .readable {
@@ -98,5 +102,22 @@ h1{
 
 #naniTF {
   color:white;
-  font-style: bold;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#seg {
+  color: black;
+  background-color: darkgrey;
+  font-size: 15px;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+#borders {
+  border-style: solid;
+  border-width: 4px;
+  border-color: black;
 }

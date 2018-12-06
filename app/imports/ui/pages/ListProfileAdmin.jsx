@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Table, Header, Loader } from 'semantic-ui-react';
+import { Container, Table, Header, Loader, Button } from 'semantic-ui-react';
 import { Profiles } from '/imports/api/profile/profile';
 import ProfileItemAdmin from '/imports/ui/components/ProfileItemAdmin';
 import { withTracker } from 'meteor/react-meteor-data';
@@ -39,6 +39,11 @@ class ListProfileAdmin extends React.Component {
                 <ProfileItemAdmin key={index} profile={profile} profiles={this.props.profiles} />)}
             </Table.Body>
           </Table>
+          <Button onClick={
+            () => Profiles.insert({
+              email: "new@foo.com", name: "new", skill: "new", instruments: [], goals: "new", playedWith: [], sessionsAttended: 0, rating: 0, taste: []
+            })
+          }>Create Profile</Button>
         </Container>
     );
   }

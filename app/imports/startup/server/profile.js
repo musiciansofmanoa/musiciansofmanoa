@@ -20,11 +20,3 @@ if (Profiles.find().count() === 0) {
 Meteor.publish('Profile', function publish() {
   return Profiles.find({});
 });
-
-/** This subscription publishes all documents regardless of user, but only if the logged in user is the Admin. */
-Meteor.publish('ProfileAdmin', function publish() {
-  if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
-    return Profiles.find();
-  }
-  return this.ready();
-});

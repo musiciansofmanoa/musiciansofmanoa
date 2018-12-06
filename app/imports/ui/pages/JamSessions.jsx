@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Header, Loader, card } from 'semantic-ui-react';
+import { Container, Header, Loader, Card } from 'semantic-ui-react';
 import { Sessions } from '/imports/api/session/session';
 import JamCard from '/imports/ui/components/JamCard';
 import { withTracker } from 'meteor/react-meteor-data';

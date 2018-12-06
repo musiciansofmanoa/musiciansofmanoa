@@ -10,9 +10,9 @@ import PropTypes from 'prop-types';
 class Profile extends React.Component {
 
   profiles = [{
-    firstName: 'Calvan', lastName: 'Liang', email: 'cl808@hawaii.edu',
-    image: 'https://calvan-liang.github.io/images/profilepicturesquare.png',
-    description: 'I play the piano. Yay.',
+    firstName: 'Admin John', lastName: 'Doe', email: 'admin@foo.com',
+    image: 'https://cdn.images.dailystar.co.uk/dynamic/140/photos/641000/The-Rock-throwback-recreation-952641.jpg',
+    description: 'Aloha! My name is John Doe and I am a musician living in Manoa. I play guitar and sing!',
   },
   ];
 
@@ -25,8 +25,8 @@ class Profile extends React.Component {
   renderPage() {
     return (
         <Container>
-          <Header as="h2" textAlign="center">Profile</Header>
-          <Card.Group>
+          <Header as="h2" textAlign="center">My Profile</Header>
+          <Card.Group centered>
             {this.profiles.map((profile, index) => <ProfileComponent key={profile + index} profile={profile} />)}
           </Card.Group>
         </Container>
@@ -36,7 +36,7 @@ class Profile extends React.Component {
 
 /** Require an array of Stuff documents in the props. */
 Profile.propTypes = {
-  stuffs: PropTypes.array.isRequired,
+  stuff: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
 };
 
@@ -45,7 +45,7 @@ export default withTracker(() => {
   // Get access to Stuff documents.
   const subscription = Meteor.subscribe('Stuff');
   return {
-    stuffs: Stuffs.find({}).fetch(),
+    stuff: Stuffs.find({}).fetch(),
     ready: subscription.ready(),
   };
 })(Profile);

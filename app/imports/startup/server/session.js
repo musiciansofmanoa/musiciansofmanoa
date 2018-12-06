@@ -18,17 +18,10 @@ if (Sessions.find().count() === 0) {
 
 /** This subscription publishes only the documents associated with the logged in user */
 Meteor.publish('Sessions', function publish() {
-  if (this.userId) {
-    const username = Meteor.users.findOne(this.userId).username;
-    return Sessions.find({ owner: username });
-  }
-  return this.ready();
+  return Sessions.find({});
 });
 
 /** This subscription publishes all documents regardless of user, but only if the logged in user is the Admin. */
 Meteor.publish('SessionsAdmin', function publish() {
-  if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
-    return Sessions.find();
-  }
-  return this.ready();
+  return Sessions.find({});
 });

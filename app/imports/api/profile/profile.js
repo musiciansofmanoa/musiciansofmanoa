@@ -16,7 +16,8 @@ const ProfileSchema = new SimpleSchema({
   skill: String,
   instruments: Array,
   'instruments.$': String,
-  playedWith: String,
+  playedWith: Array,
+  'playedWith.$': String,
   goals: String,
   imageUrl: { type: String, optional: true }
 }, { tracker: Tracker });

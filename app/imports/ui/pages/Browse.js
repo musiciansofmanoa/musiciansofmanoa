@@ -78,7 +78,7 @@ class Browse extends React.Component {
                 <Card.Content extra>
                   <a>
                     <Icon name='calendar' /> {profile.sessionsAttended} attended
-                    <Rating style={{float: "right"}} icon='star' defaultRating={profile.rating/2} maxRating={5} />
+                    <Rating style={{float: "right"}} icon='star' defaultRating={profile.rating} maxRating={5} />
                   </a>
                 </Card.Content>
               </Card>)}

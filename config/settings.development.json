@@ -13,11 +13,11 @@
   ],
 
   "userProfiles" : [
-    { "email": "john@yahoo.com", "name": "John Finkle", "taste": ["rock", "pop", "r&b"], "rating": 8, "sessionsAttended": 3, "skill": "new", "instruments": ["trumpet"], "playedWith": "Melissa DeTora", "goals": "Go Professional"},
-    { "email": "melissa@yahoo.com", "name": "Melissa DeTora", "taste": ["k-pop", "country"], "rating": 8, "sessionsAttended": 1, "skill": "experienced", "instruments": ["trumpet", "guitar"], "playedWith": "John Finkle", "goals": "Just Jam"},
-    { "email": "brian@gmail.com", "name": "Brain Kibler", "taste": ["rap", "edm"], "rating": 8, "sessionsAttended": 1, "skill": "professional", "instruments": ["trumpet"], "playedWith": "none", "goals": "Just Jam"},
-    { "email": "pink@guy.com", "name": "Salamander Man", "taste": ["rap"], "rating": 10, "sessionsAttended": 420, "skill": "god", "instruments": ["recorder"], "playedWith": "none", "goals": "gibe moni", "imageUrl": "https://vignette.wikia.nocookie.net/filthy-frank/images/9/98/Salamander_Man2.png/revision/latest?cb=20160814195253" },
-    { "email": "squidward@bikinibottom.com", "name": "Squidward", "taste": ["classical"], "rating": 0, "sessionsAttended": 10, "skill": "amateur", "instruments": ["clarinet"], "playedWith": "none", "goals": "play bubbledome", "imageUrl": "https://thumbs.gfycat.com/FirmCalculatingAnnashummingbird-poster.jpg" }
+    { "email": "john@yahoo.com", "name": "John Finkle", "taste": ["rock", "pop", "r&b"], "rating": 8, "sessionsAttended": 3, "skill": "new", "instruments": ["trumpet"], "playedWith": ["Melissa DeTora"], "goals": "Go Professional"},
+    { "email": "melissa@yahoo.com", "name": "Melissa DeTora", "taste": ["k-pop", "country"], "rating": 8, "sessionsAttended": 1, "skill": "experienced", "instruments": ["trumpet", "guitar"], "playedWith": ["John Finkle"], "goals": "Just Jam"},
+    { "email": "brian@gmail.com", "name": "Brain Kibler", "taste": ["rap", "edm"], "rating": 8, "sessionsAttended": 1, "skill": "professional", "instruments": ["trumpet"], "playedWith": [], "goals": "Just Jam"},
+    { "email": "pink@guy.com", "name": "Salamander Man", "taste": ["rap"], "rating": 10, "sessionsAttended": 420, "skill": "god", "instruments": ["recorder"], "playedWith": [], "goals": "gibe moni", "imageUrl": "https://vignette.wikia.nocookie.net/filthy-frank/images/9/98/Salamander_Man2.png/revision/latest?cb=20160814195253" },
+    { "email": "squidward@bikinibottom.com", "name": "Squidward", "taste": ["classical"], "rating": 0, "sessionsAttended": 10, "skill": "amateur", "instruments": ["clarinet"], "playedWith": [], "goals": "play bubbledome", "imageUrl": "https://thumbs.gfycat.com/FirmCalculatingAnnashummingbird-poster.jpg" }
   ],
 
   "jamSessions" : [

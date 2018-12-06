@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from 'semantic-ui-react';
+import { Card, Icon } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import { withRouter, Link } from 'react-router-dom';
 import { Sessions } from '../../api/session/session'
@@ -11,10 +11,26 @@ class JamCard extends React.Component {
         <Card centered>
           <Card.Content>
             <Card.Header>{this.props.jam.eventName}</Card.Header>
-            <Card.Meta>{this.props.jam.user} {this.props.jam.email}</Card.Meta>
+            <Card.Meta>{this.props.jam.location}</Card.Meta>
             <Card.Description>
-              {this.props.jam.purpose}
+              <Icon name='music'/>
+              Why: {this.props.jam.purpose}
             </Card.Description>
+          </Card.Content>
+          <Card.Content extra>
+            <Icon name='calendar'/>
+            When: {this.props.jam.date}
+          </Card.Content>
+          <Card.Content extra>
+            <Icon name='clock'/>
+            What time: {this.props.jam.timeStart} -
+            {this.props.jam.timeEnd}
+          </Card.Content>
+          <Card.Content extra>
+            <a>
+              <Icon name='user'/>
+              {this.props.jam.user} : {this.props.jam.email}
+            </a>
           </Card.Content>
         </Card>
     );

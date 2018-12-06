@@ -63,6 +63,7 @@ class ProfileItemAdmin extends React.Component {
     <Table.Row>
           <Table.Cell><Input defaultValue={this.props.profile.email} onChange={(e, d) => Profiles.update({_id: this.props.profile._id}, {$set: {email: d.value}})}/></Table.Cell>
           <Table.Cell><Input defaultValue={this.props.profile.name} onChange={(e, d) => Profiles.update({_id: this.props.profile._id}, {$set: {name: d.value}})}/></Table.Cell>
+          <Table.Cell><Input defaultValue={this.props.profile.imageUrl} onChange={(e, d) => Profiles.update({_id: this.props.profile._id}, {$set: {imageUrl: d.value}})}/></Table.Cell>
           <Table.Cell><Dropdown defaultValue={this.props.profile.taste} fluid search selection multiple options={tasteOptions} onChange={(e, d) => Profiles.update({_id: this.props.profile._id}, {$set: {taste: d.value}})}/></Table.Cell>
           <Table.Cell><Rating icon='star' maxRating={5} defaultRating={this.props.profile.rating} onRate={(e, d) => Profiles.update({_id: this.props.profile._id}, {$set: {rating: d.rating}})}/></Table.Cell>
           <Table.Cell>

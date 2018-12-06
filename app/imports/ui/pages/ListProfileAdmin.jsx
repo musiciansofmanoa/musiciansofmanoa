@@ -24,6 +24,7 @@ class ListProfileAdmin extends React.Component {
               <Table.Row>
                 <Table.HeaderCell>Email</Table.HeaderCell>
                 <Table.HeaderCell>Name</Table.HeaderCell>
+                <Table.HeaderCell>Image</Table.HeaderCell>
                 <Table.HeaderCell>Taste</Table.HeaderCell>
                 <Table.HeaderCell>Rating</Table.HeaderCell>
                 <Table.HeaderCell>Sessions Attended</Table.HeaderCell>

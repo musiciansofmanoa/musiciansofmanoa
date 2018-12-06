@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Header, Loader, card } from 'semantic-ui-react';
+import { Container, Header, Loader, Card } from 'semantic-ui-react';
 import { Sessions } from '/imports/api/session/session';
 import JamCard from '/imports/ui/components/JamCard';
 import { withTracker } from 'meteor/react-meteor-data';
@@ -20,7 +20,8 @@ class JamSessions extends React.Component {
         <Container>
           <Header as="h2" textAlign="center">Jam Sessions</Header>
           <Card.Group>
-            {this.props.jams.map((jam, index) => <JamCard key={index}
+            {this.props.jams.map((jam, index) => <
+                JamCard key={index}
                         jam={jam}/>)}
           </Card.Group>
         </Container>

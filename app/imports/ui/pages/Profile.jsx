@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { Container, Header, Loader, Card } from 'semantic-ui-react';
+import { Container, Header, Loader, Card, Button } from 'semantic-ui-react';
 import { Stuffs } from '/imports/api/stuff/stuff';
 import ProfileComponent from '/imports/ui/components/ProfileComponent';
 import { withTracker } from 'meteor/react-meteor-data';
@@ -12,7 +12,7 @@ class Profile extends React.Component {
   profiles = [{
     firstName: 'Admin John', lastName: 'Doe', email: 'admin@foo.com',
     image: 'https://cdn.images.dailystar.co.uk/dynamic/140/photos/641000/The-Rock-throwback-recreation-952641.jpg',
-    description: 'Aloha! My name is John Doe and I am a musician living in Manoa. I play guitar and sing!',
+    description: 'Likes Classic Rock, Country, and Funk',
   },
   ];
 
@@ -26,8 +26,13 @@ class Profile extends React.Component {
     return (
         <Container>
           <Header as="h2" textAlign="center">My Profile</Header>
-          <Card.Group centered>
+          <Card.Group>
+            <Card>
             {this.profiles.map((profile, index) => <ProfileComponent key={profile + index} profile={profile} />)}
+            <Card.Content extra>
+              <Button>Edit</Button>
+            </Card.Content>
+            </Card>
           </Card.Group>
         </Container>
     );

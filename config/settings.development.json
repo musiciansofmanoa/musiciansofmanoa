@@ -5,13 +5,6 @@
     { "email": "melissa@yahoo.com", "password": "magic" }
   ],
 
-  "defaultData": [
-    { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
-    { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
-    { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
-    { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
-  ],
-
   "userProfiles" : [
     { "email": "john@yahoo.com", "name": "John Finkle", "taste": ["rock", "pop", "r&b"], "rating": 8, "sessionsAttended": 3, "skill": "new", "instruments": ["trumpet"], "playedWith": ["Melissa DeTora"], "goals": "Go Professional"},
     { "email": "melissa@yahoo.com", "name": "Melissa DeTora", "taste": ["k-pop", "country"], "rating": 8, "sessionsAttended": 1, "skill": "experienced", "instruments": ["trumpet", "guitar"], "playedWith": ["John Finkle"], "goals": "Just Jam"},
